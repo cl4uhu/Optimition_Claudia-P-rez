@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bulletPrefab, gunPosition.position, gunPosition.rotation);
+            //Instantiate(bulletPrefab, gunPosition.position, gunPosition.rotation);
         }
     }
 }
