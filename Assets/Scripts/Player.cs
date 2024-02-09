@@ -6,18 +6,14 @@ public class Player : MonoBehaviour
 {
     [SerializeField] Transform  gunPosition; 
 
-    [SerializeField] GameObject bulletPrefab; 
-
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            //Instantiate(bulletPrefab, gunPosition.position, gunPosition.rotation);
+            //Nos preparamos para utilizar un objeto.
+            GameObject bullet = PoolManager.Instance.GetPooledObjects(gunPosition.position, gunPosition.rotation);
+            //Activamos el objeto. 
+            bullet.SetActive(true); 
         }
     }
 }
