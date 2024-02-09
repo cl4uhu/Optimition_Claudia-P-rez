@@ -6,11 +6,6 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float bulletSpeed = 5; 
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         //Movimiento hacia adelante.

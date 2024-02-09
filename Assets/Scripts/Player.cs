@@ -10,9 +10,9 @@ public class Player : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            //Nos preparamos para utilizar un objeto.
+            //Nos preparamos para utilizar un objeto rellenandola e informandole desde donde queremos que se dispare la esfera. 
             GameObject bullet = PoolManager.Instance.GetPooledObjects(gunPosition.position, gunPosition.rotation);
-            //Activamos el objeto. 
+            //Activamos la esfera. 
             bullet.SetActive(true); 
         }
     }
