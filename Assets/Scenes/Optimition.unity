@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunPosition: {fileID: 1342217693}
+  bulletType: 0
 --- !u!1 &570495370
 GameObject:
   m_ObjectHideFlags: 0
