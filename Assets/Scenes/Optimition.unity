@@ -245,7 +245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunPosition: {fileID: 1342217693}
-  bulletPrefab: {fileID: 3265018326757642380, guid: 40037fa67c76f3840b2a0ebd97d537e4, type: 3}
 --- !u!1 &570495370
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,10 +289,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd54dd358f65c884893db6839c138c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentName: BulletPool
-  prefab: {fileID: 3265018326757642380, guid: 40037fa67c76f3840b2a0ebd97d537e4, type: 3}
-  poolSize: 20
-  pooledObjects: []
+  pools:
+  - parentName: BulletPool
+    prefab: {fileID: 3265018326757642380, guid: 40037fa67c76f3840b2a0ebd97d537e4, type: 3}
+    poolSize: 20
+    pooledObjects: []
+  - parentName: GranadaPool
+    prefab: {fileID: 3265018326757642380, guid: 0574aabf62fdaf14098dde4f8071bf6b, type: 3}
+    poolSize: 10
+    pooledObjects: []
+  - parentName: 
+    prefab: {fileID: 0}
+    poolSize: 0
+    pooledObjects: []
+  - parentName: 
+    prefab: {fileID: 0}
+    poolSize: 0
+    pooledObjects: []
+  - parentName: 
+    prefab: {fileID: 0}
+    poolSize: 0
+    pooledObjects: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
