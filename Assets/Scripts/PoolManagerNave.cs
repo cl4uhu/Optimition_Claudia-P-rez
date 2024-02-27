@@ -14,7 +14,6 @@ public class PoolManagerNave : MonoBehaviour
     public int poolSize; 
     public List<GameObject> pooledObjects; 
     }
-
     [SerializeField] List<Pool> pools; 
 
     void Awake()
